@@ -1,0 +1,148 @@
+<!--Author: Adnan Ahmed
+File: index.html/aboutus.html created
+Date: 5/4/26-->
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Power Tower</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/mrp_script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head> 
+</head> 
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="logo">
+            <img src="images/gymlogo.png" alt="Gym Logo">
+        </div>
+
+        <div class="branding">
+            <h1>The Power Tower</h1>
+            <p>Fitness For Everyone</p>
+        </div>
+    </header>
+
+    <!--NAVIGATION-->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="membership.html" class="active">Membership</a></li>
+            <li><a href="creativity.html">Creativity</a></li>
+        </ul>
+    </nav>
+
+    <!--MAIN CONTENT-->
+
+    <main>
+
+        <section id="location">
+            <h2>Come To</h2>
+            <div>
+                <address>
+                    <strong>The Power Tower</strong><br>
+                    300 Jay Street,<br>
+                    Brooklyn, NY 11201<br>
+                    Phone: <a href="tel:6319432220">(631) 943-2220</a><br>
+                    Email: <a href="mailto:thepower@tower.net">thepower@tower.net</a>
+                </address>
+            </div>
+        </section>
+        
+        <!--Membership Registration Form Section-->
+
+        <section id="membership-form">
+            <h2>Membership Registration Form</h2>
+            <form class="form-grid" name="MembershipForm">
+                <!-- Start Form -->
+                 <!--The form is structured with a fieldset to help organize related fields, 
+                 so breaks forms into managable sections for the user.
+                 We use <label> to help label the specific sections and we add <input> to mention what goes 
+                 in those empty boxes. We have the <select> to allow the user to choose a specific subject from all the options. 
+                 Then we have <textarea> so the user can write a message to us and then we have the <button> where the user
+                 clicks the a button to submit their responses to us.-->
+
+                 <fieldset>
+                    <legend>Sign Up Now</legend>
+                    
+                    <label for="fName">Full Name:</label>
+                    <input type="text" id="fName" name="fName" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                    <label for="membershipType">Membership Type:</label>
+                    <select id="membershipType" name="membershipType" required>
+                        <option>Basic</option>
+                        <option>Premium</option>
+                        <option>VIP</option>
+                    </select>
+
+                    <label for="goals">Fitness Goals:</label>
+                    <textarea id="goals" name="goals" rows="5" placeholder="Enter your goals"></textarea>
+                    
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+                    <label for="emergency">Emergency Contact:</label>
+                    <input type="text" name="emergency" id="emergency" placeholder="Enter your emergency contact" required>
+
+                    <label for="referral">How Did You Hear About Us?</label>
+                    <select id="referral" name="referral">
+                        <option>Instagram</option>
+                        <option>Friend</option>
+                        <option>Family</option>
+                        <option>Google</option>
+                    </select>
+
+                    <label for="location">Preferred Location:</label>
+                    <select id="location" name="location">
+                        <option>2858 Linden Blvd, Brooklyn, NY 11208</option>
+                        <option>370 Canal St, New York, NY 10013</option>
+                        <option>1040 S Broadway, Hicksville, NY 11801</option>
+                    </select>
+                 </fieldset>
+
+                 <button type="button" onclick="submitMembership()">Register</button>
+                 <button type="button" onclick="doClear()">Clear Entries</button>
+
+
+                 <!-- End Form -->
+            </form>
+        </section>
+
+        <!-- Social Media Section -->
+        <section id="social">
+            <h3>Follow Us</h3>
+            <p>
+                <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+            </p>
+        </section>
+    </main>
+
+     <!--FOOTER-->
+     <footer>
+        <p>&copy; 2026 The Power Tower. All Rights Reserved.</p>
+        <p><a href="mailto:thepower@tower.net">thepowertower@club.net</a></p>
+    </footer>
+
+</body>
+</html>
+
+
